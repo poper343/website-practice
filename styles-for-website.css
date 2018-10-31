@@ -1,9 +1,15 @@
+/* Set the page margin and padding settings to 0*/
+html, *{
+  margin: 0;
+  padding: 0;
+}
+
 /* This is the style sheet for our fully responsive website */
 .titletext {
   display: block;
   text-align: center;
-  margin: auto;
-  padding: 10px 0px 0px 200px;
+  margin: 4em 0 4em 0;
+  padding: 2em 0 0 15em;
 }
 
 #paragraph {
@@ -16,33 +22,41 @@
   float: right;
   height: auto;
   max-width: 100%;
-  padding-top: 20px;
+  padding-top: 2em;
 }
 
+/* Unordered lists have no dot (list-style-type: none;), have no default margin
+and padding settings, covers the entire screen (width: 100%;) and a height that
+is auto. Finally the font is ROboto. */
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
     background-color: #333;
-    position: fixed;
-    top: 0;
     width: 100%;
     height: auto;
     font-family: Roboto;
+    position: fixed;
+    top: 0;
 }
+
+/* Float any list items to the left */
 li {
   float: left;
 }
 
+/* Stylize the nav bar anchored items. The text is aligned in the center with
+10em of padding on all sides; */
 li a {
   color: white;
   text-align: center;
-  padding: 10px 20px 10px 20px;
+  padding: 1em 2em 1em 2em;
   text-decoration: none;
   display: block;
   font-weight: bold;
 }
 
+/* This makes the nav bar color change when mouse hovers over it */
 li a:hover {
     background-color: rgb(0,0,150);
     transition: 1.5s;
