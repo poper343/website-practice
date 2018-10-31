@@ -1,7 +1,23 @@
 /* This is the style sheet for our fully responsive website */
 .titletext {
+  display: block;
   text-align: center;
-  padding: 0.5em 0 0 2em;
+  margin: auto;
+  padding: 10px 0px 0px 200px;
+}
+
+#paragraph {
+  text-align: justify;
+  margin-left: 1000px;
+  margin-right: 1000px;
+}
+
+#headerimage {
+  display: block;
+  float: right;
+  height: auto;
+  max-width: 100%;
+  padding-top: 20px;
 }
 
 ul {
@@ -40,4 +56,15 @@ p {
   font-family: Roboto;
   font-style:italic;
   justify-content: center;
+}
+
+#video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form {
+  display: block;
+  text-align: center;
 }
