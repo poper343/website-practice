@@ -20,18 +20,27 @@
         </ul>
       </nav><br>
     <!-- Create the Title -->
-      <div id="title">
+      <div class="header-info">
         <div id="headerimage">
           <img id="header-img" src="something.jpg" alt="engineering logo"> <!-- The Image logo of the company -->
         </div>
         <div class="titletext">
-          <h1>BLUETOOTH EARBUD REST CLIP</h1>
-          <p>"The best, portable, slick-looking rest clip available in the market"</p>
+          <div><h1>BLUETOOTH EARBUD REST CLIP</h1></div>
+          <div><p>"The best, portable, slick-looking rest clip available in the market"</p></div>
+        </div>
+        <div id="headerimage">
+          <img id="header-img" src="something.jpg" alt="engineering logo"> <!-- The Image logo of the company -->
         </div>
       </div>
     </header>
 
       <hr>
+
+      <!-- We will create an image element -->
+      <div class="flex-container">
+        <div><img id="product-picture" src="clip_render.jpg" alt="image of the product"></div>
+        <div><p>Solidworks Render of the Clip</p></div>
+      </div>
 
       <!-- Using the iframe element, create a region for the embbed video -->
      <div>
@@ -40,8 +49,9 @@
         picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <!-- I need a form which takes an email as the input and HTML5 Verification -->
-      <div>
+    <!-- I need a form which takes an email as the input and HTML5 Verification   -->
+      <div id="form-sec">
+        <div><p style="text-align: center;">Preorder Your's Now!</p></div>
         <form class="form-style" id="form" action="/useremail.php" method="get" target="https://www.freecodecamp.com/email-submit">
           <input id="email" type="email" placeholder="yourname@yahoo.com">
           <input id="submit" type="submit" class="submit-button">
